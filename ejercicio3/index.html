@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css">
+    <title>Galería e imágenes</title>
+    <style>
+    .ocultar {
+        display: none;
+    }
+    h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+    }
+
+    .ocultar > p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    .subtitle {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: coral;
+    }
+    /* para que las modificaciones de estilo en css afecten los pies de foto, es necesario utilizar especificaciones de las etiquetas y campos de trabajo. En este caso, usamos data-sub-html, pero en el ejemplo lo vemos como .lg-sub-html como se muestra a continuación: 
+
+    .lg-sub-html {
+        background-color: rgba(0, 0, 0, 0.45);
+        bottom: 0;
+        color: #EEE;
+        font-size: 16px;
+        left: 0;
+        padding: 10px 40px;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        z-index: 1080;
+}
+*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <section>
+            <h1>Galería</h1>
+            <p>Aquí una muestra de mis trabajos.</p>
+            <div id="lightgallery">
+                <a href="images/woman-lights.jpg" data-sub-html="#caption1">
+                    <img src="images/woman-lights_tb.jpg" alt="Woman with neon lights"/>
+                </a>
+                <a href="images/cliff.jpg" data-sub-html="#caption2">
+                    <img src="images/cliff_tb.jpg" alt="Man on a cliff"/>
+                </a>
+                <a href="images/subway.jpg" data-sub-html="#caption3">
+                    <img src="images/subway_tb.jpg" alt="Subway and city"/>
+                </a>
+                <a href="images/asian-city.jpg" data-sub-html="#caption4">
+                    <img src="images/asian-city_tb.jpg" alt="Tokyo night lights"/>
+                </a>
+            </div>
+            <div id="caption1" class="ocultar">
+                <h4 class="subtitle">Neon Beon</h4>
+                <p class="paragraph">Photography of a woman with bodypaint in neon lights.</p>
+            </div>
+            <div id="caption2" class="ocultar">
+                <h4 class="subtitle">Cliffhangin'</h4>
+                <p class="paragraph">A man observing the mist around him from a cliff.</p>
+            </div>
+            <div id="caption3" class="ocultar">
+                <h4 class="subtitle">City Sub</h4>
+                <p class="paragraph">Photography artwork showing buildings and the subway.</p>
+            </div>
+            <div id="caption4" class="ocultar">
+                <h4 class="subtitle">Tokyo Bongo</h4>
+                <p class="paragraph">Night view of the streets of Tokyo with city lights.</p>
+            </div>
+        </section>
+    </div>
+
+     <!-- jQuery version must be >= 1.8.0; -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="js/lightgallery-all.js"></script>
+ 
+     <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+ 
+     <!-- lightgallery plugins -->
+     <script src="modules/lg-thumbnail.min.js"></script>
+     <script src="modules/lg-fullscreen.min.js"></script>
+
+     <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery();
+        });
+     </script>
+
+
+</body>
+</html>
