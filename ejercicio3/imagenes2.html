@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes BPG.</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,900&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="js/bpgdec8a.js"></script>
+    <style>
+        .container {
+            height: 100vh;
+            width: 70%;
+            background-image: url("images/stars.png");
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-template-areas:
+            "h h h h h h h h"
+            "s s s s s s s s"
+            "f f f f f f f f"
+        }
+
+        header {
+            grid-area: h;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FF6B82;
+            color: azure;
+        }
+
+        main {
+            grid-area: s;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: white;
+            padding: 1rem;
+        }
+        
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        figcaption {
+            display: flex;
+            justify-content: center;
+        }
+       
+        footer {
+            grid-area: f;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            background-color: darkblue;
+            color: azure;
+            display: flex;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Sky lights and city lights</header>
+        <main>
+            <h2>IMAGEN BPG</h2>
+            <figure><img src="images/architecture-bridge-brooklyn-bridge-236451.bpg" alt="Brooklyn sunset" width="800"></figure>
+            <figcaption>Esta es una imagen de un atardecer en Brooklyn.</figcaption>
+        </main>
+        <footer>Las imágenes bpg tienen una calidad bien shida.</footer>
+    </div>
+</body>
+</html>
