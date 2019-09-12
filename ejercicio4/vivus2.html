@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4-2</title>
+    <style>
+        svg {
+            height: 30vh;
+        }
+        button {
+            margin: 0;
+            padding: 1 rem 2 rem;
+            border-radius: 6px;
+            border: 1px solid #515151;
+            color: inherit;
+            background-color: rgb(149, 149, 149);
+            font-size: 2rem;
+            text-decoration: none;
+            cursor: pointer;
+            outline: 0;
+        }
+        
+        button:hover {
+            background-color: rgb(107, 107, 225);
+            color: #FFFFFF;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <svg id="connect" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" onclick="myVivus.reset().play();" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 723.06 659.01"><defs><style>.cls-1,.cls-2,.cls-3,.cls-4,.cls-6,.cls-7{fill:none;}.cls-2,.cls-3,.cls-4,.cls-6,.cls-7{stroke:#1d1d1b;}.cls-2,.cls-3,.cls-4{stroke-miterlimit:10;}.cls-2{stroke-width:4px;}.cls-4,.cls-6,.cls-7{stroke-width:2px;}.cls-5{clip-path:url(#clip-path);}.cls-6,.cls-7{stroke-linecap:round;stroke-linejoin:round;}.cls-6{stroke-dasharray:0 4.03;}.cls-8{clip-path:url(#clip-path-2);}</style><clipPath id="clip-path"><rect class="cls-1" x="171.04" y="78.36" width="326.09" height="326.09"/></clipPath><clipPath id="clip-path-2"><rect class="cls-1" x="142.86" y="109.2" width="103.67" height="103.67"/></clipPath></defs><title>michelle-connect</title><polygon class="cls-2" points="360.87 6 469.44 194.05 578.01 382.09 360.87 382.09 143.74 382.09 252.3 194.05 360.87 6"/><line class="cls-3" x1="360.87" y1="256.98" x2="360.87" y2="595.56"/><line class="cls-3" x1="62.37" y1="84.64" x2="360.87" y2="256.98"/><line class="cls-3" x1="659.37" y1="84.64" x2="360.87" y2="256.98"/><circle class="cls-2" cx="38.4" cy="70.8" r="28.09"/><circle class="cls-3" cx="194.69" cy="161.04" r="64.37"/><circle class="cls-3" cx="99.81" cy="106.85" r="18.89"/><circle class="cls-4" cx="360.87" cy="256.88" r="192.5"/><circle class="cls-2" cx="683.35" cy="70.8" r="28.09"/><circle class="cls-2" cx="360.87" cy="623.64" r="28.09"/><g class="cls-5"><path class="cls-6" d="M340.42,402.75a161.47,161.47,0,0,0,155.1-158.17"/><path class="cls-6" d="M495.42,235.07A161.47,161.47,0,0,0,337.25,80"/><path class="cls-6" d="M327.74,80.06a161.48,161.48,0,0,0-155.1,158.18"/><path class="cls-6" d="M172.73,247.75A161.47,161.47,0,0,0,330.91,402.84"/><path class="cls-7" d="M334.08,402.87h0M172.61,241.41h0M334.08,79.94h0M495.55,241.41h0"/></g><g class="cls-8"><path class="cls-6" d="M196.71,212.33A51.34,51.34,0,0,0,246,162.05"/><path class="cls-6" d="M246,159a51.35,51.35,0,0,0-50.29-49.31"/><path class="cls-6" d="M192.68,109.74A51.34,51.34,0,0,0,143.37,160"/><path class="cls-6" d="M143.4,163.05a51.32,51.32,0,0,0,50.28,49.31"/><path class="cls-7" d="M194.69,212.37h0M143.36,161h0m51.33-51.33h0M246,161h0"/></g></svg>
+
+            <script type="text/javascript" src="js/vivus.js"></script>
+            <span class="button">
+                <button onclick="myVivus.reset().play();">REPLAY</button>
+            </span>
+            
+            <script>
+                const myVivus = new Vivus('connect', {type: 'scenario-sync', duration: 10});
+            </script>
+        </section>
+    </div>
+    
+</body>
+</html>
