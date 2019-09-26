@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0%;
+}
+#container {
+  display: grid;
+  background-image: url(../images/oil-background.jpg);
+  grid-template-columns:  repeat(5, .5fr);
+  grid-template-rows: repeat(4,.5fr);
+  grid-gap: 10px;
+  grid-template-areas:
+  "h h h h h"
+  "l l l l l"
+  "m m m m m"
+  "f f f f f"
+}
+/*-----------------HEADER----------------*/
+header {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  grid-area: h;
+}
+.mainlogo {
+  width: 100px;
+  justify-content: center;
+}
+/*-----------------SECTION----------------*/
+section {
+  background-color: rgba(243, 151, 98, 0.664);
+  height: 20vh;
+  grid-area: l;
+}
+.logo {
+  width: 100px;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  color: white;
+}
+/*-----------------MAIN----------------*/
+main {
+  height: 50vh;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  grid-area: m;
+  text-align: center;
+  padding: 100px 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+/*-----------------FOOTER----------------*/
+footer {
+  grid-area: f;
+  height: 50vh;
+  justify-content: flex-end;
+}
+
+
+/*MEDIA QUERY*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  html {
+    background-color: chocolate;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  html {
+    background-color: #b97979;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    background-color: #75dabb;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  html {
+    background-color: #d471d4;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    background-color: #bb5779;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    background-color: #70aee0;
+  }
+}
