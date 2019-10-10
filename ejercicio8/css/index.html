@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Righteous&display=swap" rel="stylesheet">
+    <title>ScrollReveal</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="uno"><h2>Sección 1</h2></section>
+            <section class="dos"><h2>Sección 2</h2></section>
+            <section class="tres"><h2>Sección 3</h2></section>
+        </main>
+        <footer>
+            <h2>Cya, nos vemos.</h2>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal().reveal('header', { delay: 400, distance:'0px', opacity: 0.2 });
+        ScrollReveal().reveal('.uno', { origin: 'left', distance:'50px', delay: 500 });
+        ScrollReveal().reveal('.dos', { scale: 0.5 });
+        ScrollReveal().reveal('.tres', { origin: 'right', distance:'500px', delay: 1500 });
+        ScrollReveal().reveal('footer', { delay: 1500, rotate: {x: 20, z:20} });
+    </script>
+    
+</body>
+</html>

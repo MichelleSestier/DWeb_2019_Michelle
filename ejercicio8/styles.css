@@ -1,0 +1,51 @@
+.container {
+    background-color: antiquewhite;
+    display: grid;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 3.25rem;
+    height: 4em;
+    font-family: 'Righteous', cursive;
+}
+nav ul {
+    justify-content: space-around;
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+li a {
+    padding: 5rem;
+    text-decoration: none;
+    justify-content: flex-end;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+    padding: 5em;
+}
+.uno {
+    background-color: #3c518a;
+}
+.dos {
+    background-color: darkcyan;
+}
+.tres {
+    background-color: #57c287;
+}
+footer {
+    background-color: coral;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+footer h2 {
+    padding: .5rem;
+}
